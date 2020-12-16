@@ -71,11 +71,11 @@ const fetchData = async() => {
             let chapter_image = [];
             chapter_image.push(itemImage);
             console.log(chapter_image);
-            // for(let j = 0;j < itemImage.length;j++){
-            //     const item = itemImage.eq(j);
-            //     const images = item.find('img').attr('src');
-            // console.log(images);
-            //}
+            for(let j = 0;j < itemImage.length;j++){
+                const item = itemImage.eq(j);
+                const images = item.find('img').attr('src');
+            console.log(images);
+            }
         }
 
     } catch(error){
